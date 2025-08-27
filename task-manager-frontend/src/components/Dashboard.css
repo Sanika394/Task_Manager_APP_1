@@ -1,0 +1,105 @@
+/* src/components/Dashboard.css */
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.dashboard-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.logout-btn {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-task-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.add-task-container input[type="text"],
+.add-task-container input[type="date"] {
+  flex: 1;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.add-btn {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.tasks-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.task-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 12px 16px;
+  background-color: #f9f9f9;
+  transition: background-color 0.3s;
+}
+
+.task-card.completed {
+  background-color: #e0ffe0;
+  text-decoration: line-through;
+}
+
+.task-card.overdue {
+  border-left: 4px solid red;
+}
+
+.task-info h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.task-info p {
+  margin: 2px 0 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.task-actions button {
+  margin-left: 5px;
+  padding: 6px 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.complete-btn {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.delete-btn {
+  background-color: #f44336;
+  color: white;
+}
