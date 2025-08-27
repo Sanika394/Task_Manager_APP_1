@@ -111,6 +111,3 @@ Copy code
 
 ---
 
-If you want, I can also **add a “Requirements.txt” style section listing all npm packages for backend and frontend** so anyone cloning your repo can just install them easily.  
-
-Do you want me to add that too?
